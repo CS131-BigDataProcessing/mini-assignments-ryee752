@@ -1,0 +1,7 @@
+    1  grep -o '\bwor\w*' goodluck.txt
+    2  grep -o '\w*dred\w*' goodluck.txt
+    3  grep "Good luck, babe" goodluck.txt
+    4  grep "Good luck, babe" goodluck.txt | wc -l -w
+    5  grep "Good luck, babe" goodluck.txt | wc -l -w > "Yee-R_a2_counts.txt"
+    6  vi Yee-R_a2_counts.txt
+    7  history > Yee-R_a2_cmds.log
