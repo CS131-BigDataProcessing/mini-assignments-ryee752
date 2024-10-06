@@ -1,0 +1,33 @@
+1. What are all the airlines? What awk command did you use to get this information?
+
+"airline"
+"Alaska"
+"American"
+"Delta"
+"Jet Blue"
+"Southwest"
+"United"
+
+Command: awk -F, '{print $4}' airline_stats.csv | sort | uniq
+
+2A. Which airlines have a carrier delay greater than 10 and print airline names?
+
+"Alaska"
+"American"
+"Delta"
+"Jet Blue"
+"Southwest"
+"United"
+
+Command: awk -F, '$1 > 10 {print $4}' airline_stats.csv | sort | uniq
+
+2B. Which airlines have a carrier delay greater than 15?
+
+"Alaska"
+"American"
+"Delta"
+"Jet Blue"
+"Southwest"
+"United"
+
+Command: awk -v Threshold="$15" -F, '{$1 > threshold {print $4}' airline_stats.csv | sort | uniq

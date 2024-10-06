@@ -1,0 +1,11 @@
+    1  vi airline_inquiry.txt
+    2  awk -F, '{print $4}' airline_stats.csv | sort | uniq
+    3  awk -F, '{print $4}' airline_stats.csv | sort | uniq >> airline_inquiry.txt
+    4  vi airline_inquiry.txt
+    5  awk -F, '$1 > 10 {print $4}' airline_stats.csv | sort | uniq
+    6  awk -F, '$1 > 10 {print $4}' airline_stats.csv | sort | uniq >> airline_inquiry.txt
+    7  vi airline_inquiry.txt
+    8  awk -v Threshold="$15" -F, '$1 > threshold {print $4}' airline_stats.csv | sort | uniq
+    9  awk -v Threshold="$15" -F, '$1 > threshold {print $4}' airline_stats.csv | sort | uniq >> airline_inquiry.txt
+   10  vi airline_inquiry.txt
+   11  history > a6_cmds.log
