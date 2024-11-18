@@ -1,0 +1,7 @@
+1) Other tasks that can benefit from automation using cron or at
+- security updates
+- system maintenance
+- cleaning data.
+
+2) Potential risks with poorly managed automated tasks and how to avoid them
+- Poorly configured cron jobs can lead to risks such as conflicts with other tasks or even crashes. To avoid this, you can schedule jobs to run at off-peak hours, ensure and prevent overlapping tasks. 

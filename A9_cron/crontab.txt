@@ -1,0 +1,4 @@
+# Crontab jobs
+0 2 * * * rm -rf ~/mini-assignments-ryee752/A9_cron/temp/*
+0 3 * * 0 sh ~/mini-assignments-ryee752/A9_cron/backup.sh
+30 8 * * * df -h | mail -s "Disk Usage Report" ryan.m.yee@sjsu.edu
