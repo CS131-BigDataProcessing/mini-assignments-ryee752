@@ -2,18 +2,14 @@
 
 workflow {
     convertToUpperCase()
-    params.output.view()
 }
 
 process convertToUpperCase {
-    input:
-    val input from params.input
-
     output:
-    path(params.output)
+    path 'output.txt'
 
     script:
     """
-    echo "$input" | tr '[:lower:]' '[:upper:]' > ${params.output}
+    echo $params.input | tr '[:lower:]' '[:upper:]' > output.txt
     """
 }
